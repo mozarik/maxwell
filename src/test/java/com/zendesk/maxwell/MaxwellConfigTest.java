@@ -144,8 +144,8 @@ public class MaxwellConfigTest
 		assertEquals(config.pubsubRpcTimeoutMultiplier, 1.0f, 0.0f);
 		assertTrue(config.pubsubRpcTimeoutMultiplier >= 1.0f);
 
-		assertEquals(config.pubsubRetryDelayMultiplier, 1.3f, 0.0f);
-		assertTrue(config.pubsubRetryDelayMultiplier > 1.0f);
+		assertEquals(config.pubsubRetryDelayMultiplier, 1.0f, 0.0f);
+		assertTrue(config.pubsubRetryDelayMultiplier >= 1.0f);
 	}
 
 
