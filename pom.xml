@@ -350,6 +350,11 @@
       <artifactId>jedis</artifactId>
       <version>3.5.1</version>
     </dependency>
+    <dependency>
+      <groupId>com.google.auth</groupId>
+      <artifactId>google-auth-library-credentials</artifactId>
+      <version>1.12.1</version>
+    </dependency>
 
     <!-- test -->
     <dependency>
