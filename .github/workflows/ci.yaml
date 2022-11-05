@@ -30,6 +30,6 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Docker Build and push
         run: |-
-          current_tag=zendesk/maxwell:"${GITHUB_REF##refs/tags/}"
-          latest_tag=zendesk/maxwell:latest
+          current_tag=zeinfahrozi/maxwell:"${GITHUB_REF##refs/tags/}"
+          latest_tag=zeinfahrozi/maxwell:latest
           docker buildx build --platform=linux/arm64,linux/amd64 --file=Dockerfile --push --tag="$current_tag" --tag="$latest_tag" .
